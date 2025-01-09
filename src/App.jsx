@@ -34,8 +34,13 @@ function Class11Program() {
 }
 
 function Class12Program() {
+  const navigate = useNavigate();
+  function redirecttoHomepage(){
+    navigate("/");
+  }
   return <div>
     NEET programs for class 12th
+    <button onClick={redirecttoHomepage}>Get back to Home page</button>
   </div>
 }
 
